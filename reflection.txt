@@ -1,0 +1,4 @@
+The idea for the workout logger came from wanting to solve a real-life problem: easily tracking workout routines by training split. The microservice architecture was chosen to demonstrate scalability and clean separation of concerns.
+A key challenge was ensuring inter-service communication using Docker networks. I learned that Docker Compose automatically creates a shared network where services can address each other by name.
+The creative enhancement, a monitoring script inside the backend container, simulates real-world DevOps use cases where container health must be managed. Combined with Docker’s native healthcheck, this creates a self-healing system.
+Docker made development much smoother, especially through layered builds, Dockerfile optimizations, and Compose orchestration. The project could be extended with authentication, a real user system, and deployed to Kubernetes for horizontal scaling.
